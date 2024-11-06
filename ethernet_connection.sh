@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#Настрока соединения с сетью...
-
 #Ищем проводной интерфейс
 INTERFACE=$(ip link show | grep -oE "eth[0-9]|enp[0-9]+s[0-9]+" | head -n 1)
 if [ -n "$INTERFACE" ]; then
