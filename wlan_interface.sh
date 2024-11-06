@@ -4,10 +4,10 @@
 
 echo "Определяем безпроводной интерфейс Wi-Fi..."
 
-WIFI_INTERFACE=$(iwctl device list | grep -o "wlan[0-9]\|wlp[0-9]s[0-9]")
+WIRELESS_INTERFACE=$(iwctl device list | grep -o "wlan[0-9]\|wlp[0-9]s[0-9]")
 
-if [ -n "$WIFI_INTERFACE" ]; then
-    echo "Безпроводной интерфейс определен: $WIFI_INTERFACE"
+if [ -n "$WIRELESS_INTERFACE" ]; then
+    echo "Безпроводной интерфейс определен: $WIRELESS_INTERFACE"
 else 
     echo "Безпроводной интерфейс не найден..."
 fi    
