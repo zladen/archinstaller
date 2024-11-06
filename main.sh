@@ -1,5 +1,8 @@
 #!/bin/bash
 
-#Устанавливае шрифт setfont cyr-sun16
+#Устанавливаем шрифт setfont cyr-sun16
 setfont cyr-sun16
-echo "Устанавливаем шрифт setfont cyr-sun16"
+
+clear
+
+echo "Устанавили шрифт setfont cyr-sun16"
