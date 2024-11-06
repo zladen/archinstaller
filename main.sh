@@ -7,5 +7,5 @@ clear
 
 echo "Устанавили шрифт setfont cyr-sun16"
 
-ETH_INTERFACE=$(source ./ethernet_connection.sh)
+ETH_INTERFACE=$(/./ethernet_connection.sh)
 export ETH_INTERFACE
