@@ -1,16 +1,13 @@
 #!/bin/bash
 
-#Устанавливае шрифт setfont cyr-sun16
-setfont cyr-sun16
 
 # Проверяем блокировку wifi
-
-rfkill
 
 if rfkill list wifi | grep -q "blocked: yes"; then
     echo "Wi-Fi заблокирован. Разблокируем..."
     rfkill unblock wifi
     echo "Wi-Fi Разблокирован..."
+fi
 
 # Настраиваем WIFI
 
