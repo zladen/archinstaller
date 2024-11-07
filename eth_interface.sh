@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#Ищем проводной интерфейс
 echo "Определяем проводной интерфейс..."
 ETH_INTERFACE=$(ip link show | grep -oE "eth[0-9]|enp[0-9]+s[0-9]+" | head -n 1)
 export ETH_INTERFACE
